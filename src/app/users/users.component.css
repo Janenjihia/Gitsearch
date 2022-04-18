@@ -119,3 +119,9 @@ hr{
 #created{
   font-weight: 400;
   font-family: 'Pangolin', cursive;}
+
+  .avatar{
+    height: auto;
+    width: auto;
+    
+  }
