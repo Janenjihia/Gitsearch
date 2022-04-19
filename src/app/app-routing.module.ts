@@ -2,8 +2,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { UsersComponent } from './users/users.component';
-// import { Repos } from './repo'; 
-// import {  NotfoundComponent } from './notfound/notfound.component';
 import { repoComponent } from './repos/repos.component';
 
 
