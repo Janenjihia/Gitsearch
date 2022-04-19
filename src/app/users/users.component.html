@@ -1,3 +1,15 @@
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10"> -->
+      <form class="form-inline active-cyan-4">
+        <input class=" form-control-sm mr-3 w-75" type="search" placeholder="Enter Github Username...."  name="Username" [(ngModel)]="userName" aria-label="Search" (keyup)="search()">
+        <!-- <button class="btn btn-info  btn-sm" (click) = "search()"> <i class="fa fa-search" aria-hidden="true"></i> Search</button> -->
+      </form>
+    <!-- </div>
+    <div class="col-sm-1"></div>
+  </div>
+</div> -->
 
 <div class="container-fluid">
   <div class="avatar">
@@ -11,4 +23,24 @@
       <h6>{{user.location}}</h6>
   </div>
 </div>
+</div>
+<!-- repo logic  -->
+
+<div class="col-md-12 repo m-3">
+  <div class="row">
+      <div class="col-md-6 card" *ngFor="let repo of repo">
+          <a href="{{repo.html_url}}">
+             <h4>{{repo.name}}</h4>
+              <p>{{repo.html_url}}</p>
+              <p>{{repo.description}}</p>
+              </a>
+              <div class="repo">
+              <p>{{repo.language}}</p>
+              <p>Created on {{repo.created_at | date}}</p>
+              <p>{{repo.forks_count}} forks </p>
+              <p>{{repo.watchers_count}} Watchers</p>
+              </div>
+        
+      </div>
+  </div>
 </div>
