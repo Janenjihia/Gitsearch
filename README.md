@@ -2,18 +2,19 @@
 #### By Jane Njihia
 
 ![This is an image](./src/assets/PROJECTSNIPPET.png)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
 ## Requirements
-Make sure you have access to a computer
-make sure you have access to the internet
-Create a GitHub account
+ -Make sure you have access to a computer
+ -make sure you have access to the internet
+ -Create a GitHub account
 
 ## Technologies Used
-Technologies Used
-HTML - Which was used to build the structure of the page
-CSS - Which was used for styling and layout
-Typescript - Which was used to for the site's logic and functionality
+ -HTML - Which was used to build the structure of the page
+ -CSS - Which was used for styling and layout
+ -Typescript - Which was used to for the site's logic and functionality
 
 
 ## License
