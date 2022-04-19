@@ -1,4 +1,6 @@
 # Gitsearch
+
+
 #### By Jane Njihia
 
 ![This is an image](./src/assets/PROJECTSNIPPET.png)
