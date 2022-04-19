@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
-import { Repos } from '../repo';
+
 
 @Component({
   selector: 'app-repo',
@@ -9,14 +9,14 @@ import { Repos } from '../repo';
 })
 export class repoComponent implements OnInit {
 
-  public repo:any=[];
+  // public repo:any=[];
 
   constructor(private apiService: ApiService) { 
-    this.apiService.getRepo().subscribe((response: any) => {
-      this.repo = response;
-      console.log(response);
+    // this.apiService.getRepo().subscribe((response: any) => {
+    //   this.repo = response;
+    //   console.log(response);
       
-    })
+    // })
   }
 
   ngOnInit(): void {

@@ -29,15 +29,24 @@ constructor( private apiService: ApiService) {
 
 }
 
-  search(){
-    this.apiService.getRepo().subscribe((response:any)=>{
-      this.repo=response
-    })
-    this.apiService.getUserInfo().subscribe((response:any)=>{
-      this.user=response
-    })
+  searchUser(){
+    // this.apiService.getRepo().subscribe((response:any)=>{
+    //   this.repo=response
+    // })
+    // this.apiService.getUserInfo().subscribe((response:any)=>{
+    //   this.user=response
+    // })
     // this.searchOutput.emit(this.user);
     // this.user = "";
+
+    this.apiService.getUserName(this.userName)
+    this.apiService.getUserInfo().subscribe((response: any) => {
+        this.user = response;
+        console.log(response);
+    })
+    this.apiService.getRepo().subscribe((response: any) => {
+        this.repo = response;
+      })
   }
 ngOnInit(): void {
 }

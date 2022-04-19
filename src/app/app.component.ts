@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from './api.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Gitsearch';
+
+  constructor(private apiService:ApiService) {
+    
+  }
+  ngOnInit(): void {
+    
+  }
 }
